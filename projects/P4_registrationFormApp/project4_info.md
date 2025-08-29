@@ -111,7 +111,7 @@
 	> Note that the textarea requires a closing tag.
 	> <label>Provide a bio: <textarea></textarea></label>
 
-2. To give it an initial size, you can add the rows and cols attributes.
+2. To give it an initial size, you can add the rows and cols attributes. -> <textarea rows="4" cols="13"></textarea>
 
 
 

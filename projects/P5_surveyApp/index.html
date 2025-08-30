@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Customer Feedback</h1>
+    <p id="description">Thank you for stopping by! We'd love to hear your thoughts so we can keep brewing happiness</p>
+
+    <form id="survey-form" action="" method="post">
+      <!-- ---------------------------------- -->
+      <fieldset>
+
+        <label for="name" id="name-label">
+          Name: <input id="name" type="text" placeholder="Enter your name" name="name" required>
+        </label>
+        <label for="email" id="email-label">
+          Email: <input id="email" type="email" placeholder="Enter your email" name="email" required>
+        </label>
+        <label for="number" id="number-label">
+          Age (optional): <input id="number" type="number" placeholder="Enter your age" name="number" min="18" max="120">
+        </label>
+        <label for="dropdown">
+          How did you hear about us?
+          <select id="dropdown" name="dropdown">
+            <option value="Select-source"> Select source </option>
+            <option value="social-media"> Social media </option>
+            <option value="word-of-mouth"> Word of mouth </option>
+            <option value="walked-by"> Walked by </option>
+            <option value="online-search"> Online search </option>
+          </select>
+        </label>
+
+      </fieldset>
+      <hr>
+      <!-- ---------------------------------- -->
+      <fieldset>
+        <legend>Was this your first visit to our cafe?</legend>
+        <label><input id="yes" type="radio" name="recommend" value="yes" checked> Yes</label>
+        <label><input id="no" type="radio" name="recommend" value="no"> No, I'm a regular!</label>
+
+      </fieldset>
+      <hr>
+      <!-- ---------------------------------- -->
+      <fieldset>
+
+        <legend>What would you like to be added to the menu? (Check all that apply)</legend>
+
+        <label><input type="checkbox" value="tiramisu" checked> Tiramisu</label>
+        <label><input type="checkbox" value="opera-cake"> Opera Cake</label>
+        <label><input type="checkbox" value="coffee-panna"> Coffee Panna Cotta</label>
+        <label><input type="checkbox" value="affogato"> Affogato</label> 
+        <label><input type="checkbox" value="coffee-jelly"> Coffee Jelly</label>
+
+      </fieldset>
+
+        <label class="textarea-label" for="comment">
+          Any comments or suggestions?
+          <textarea id="comment" placeholder="Enter your comment here..." rows="5" cols="20"></textarea>
+        </label>
+        
+
+      
+      <!-- ---------------------------------- -->
+      <input id="submit" type="submit" value="Submit">
+    </form>
+  </body>
+</html>

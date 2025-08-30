@@ -40,6 +40,7 @@ main{
 }
 
 .projectGrid{
+  max-width: 1000px;
   width: 80%;
   padding: 20px;
   margin-inline: auto;

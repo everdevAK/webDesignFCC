@@ -71,6 +71,14 @@ header{
   transition: .2s ease-in-out;
 }
 
+.element-style {
+  color: var(--header-bg);
+}
+
+.navbar ul li a:hover .element-style {
+  color: orangered;
+}
+
 
 /* MAIN SECTION */
 main{

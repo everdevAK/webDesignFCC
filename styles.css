@@ -1,22 +1,38 @@
 :root{
-  --main-bg-color: #333;
+  --main-bg: #111;
+  --project-bg: #222;
   --main-color: #fff;
-  --header-bg: #111;
+  --header-bg: #501894;
 }
 
-*{
+html {
+  font-size: 10px;
+}
+
+*, ::after, ::before{
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
 
-a{
-  text-decoration: none;
+body{
   color: var(--main-color);
+  font-family: Poppins, sans-serif;
 }
 
-body{
-  background: var(--main-bg-color);
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.italic {
+  font-size: 2rem;
+}
+
+a{
+  text-decoration: none;
   color: var(--main-color);
 }
 
@@ -26,18 +42,57 @@ body{
   align-items: center;
 }
 
+
+/* HEADER SECTION */
 header{
-  padding: 10px;
-  height: 100px;
+  width: 100%;
+  padding-inline: 10px;
+  height: 60px;
   background: var(--header-bg);
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
-main{
-  background: var(--header-bg);
+.navbar {
   width: 100%;
-  min-height: 100vh;
+}
+
+.navbar ul {
   height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.navbar ul li a {
+  font-size: 1.8rem;
   padding: 15px;
+  transition: .2s ease-in-out;
+}
+
+
+/* MAIN SECTION */
+main{
+  width: 100%;
+  height: 100%;
+}
+
+/* SECTIONS */
+section {
+  background-color: var(--main-bg);
+  padding: 70px 10px 10px 10px;
+  text-align: center;
+}
+
+#web-design {
+  height: 100%;
+  min-height: 100vh;
+}
+
+h2 {
+  margin: 30px 0 10px 0;
+  font-size: 3rem;
 }
 
 .projectGrid{
@@ -50,39 +105,48 @@ main{
   flex-wrap: wrap;
   gap: 20px;
   border-radius: 10px;
-  background: var(--main-bg-color);
 }
 
 .project{
   width: 200px;
   height: 150px;
-  padding: 5px;
   border-radius: 8px;
-  background: var(--header-bg);
+  background: var(--project-bg);
   cursor: pointer;
-  transition: .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 .project:hover{
   transform: scale(1.05);
-  box-shadow: 4px 4px 8px 2px #222;
+  box-shadow: 0px 0px 8px 2px rgb(28, 15, 43);
 }
 
-.project h2{
-  background: slategray;
+.project h3{
+  background: var(--header-bg);
   padding: 10px;
-  border-radius: 8px;
+  border-radius: 8px 8px 0 0;
   text-align: center;
+  font-size: 1.6rem;
 }
 
 .project-details{
   width: 100%;
   height: calc(100% - 48px);
   padding: 10px; 
-  justify-content: space-evenly;
-  gap: 10px;
 }
 
 .project-details p{
+  padding: 10px 22px;
   text-align: center;
+  font-size: 1.3rem;
+}
+
+
+
+
+/* MEDIA QUERY */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }

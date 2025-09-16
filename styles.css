@@ -2,6 +2,7 @@
   --main-bg: #111;
   --project-bg: #222;
   --main-color: #fff;
+  --main-header-bg: #333;
   --header-bg: #501894;
 }
 
@@ -48,10 +49,11 @@ header{
   width: 100%;
   padding-inline: 10px;
   height: 60px;
-  background: var(--header-bg);
+  background: var(--main-header-bg);
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 999;
 }
 
 .navbar {
@@ -72,7 +74,7 @@ header{
 }
 
 .element-style {
-  color: var(--header-bg);
+  color: var(--main-header-bg);
 }
 
 .navbar ul li a:hover .element-style {

@@ -4,6 +4,7 @@
   --main-color: #fff;
   --main-header-bg: #333;
   --header-bg: #501894;
+  --fcc-color: rgb(200, 192, 41);
 }
 
 html {
@@ -29,7 +30,9 @@ h2 {
 }
 
 .italic {
-  font-size: 2rem;
+  font-style: italic;
+  font-size: 3rem;
+  color: var(--fcc-color);
 }
 
 a{
@@ -107,11 +110,11 @@ h2 {
   width: 80%;
   padding: 20px;
   margin-inline: auto;
+  border-radius: 10px;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 20px;
-  border-radius: 10px;
 }
 
 .project{

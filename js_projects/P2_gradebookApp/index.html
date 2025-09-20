@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Grade Book</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Grade Book</h1>
+  </header>
+
+  <main>
+    <div class="container">
+        <div class="message">
+            <p>Our calculation is based the average score of the student and not individual subject score</p>
+        </div>
+        <div id="display-certificate-info" class="display-certificate-info">
+            
+        </div>
+
+        <fieldset class="scores">
+            <legend>Subject scores</legend>
+            <h2>Enter all the value and click "Get Certificate"</h2>
+            <label for="english">
+              <span>English: </span><input id="english" type="number" placeholder="0">
+            </label>
+            <label for="math">
+              <span>Math: </span><input id="math" type="number" placeholder="0">
+            </label>
+            <label for="science">
+              <span>Science: </span><input id="science" type="number" placeholder="0">
+            </label>
+            <label for="art">
+              <span>Art: </span><input id="art" type="number" placeholder="0">
+            </label>
+            <label for="programming">
+              <span>Programming: </span><input id="programming" type="number" placeholder="0">
+            </label>
+
+            <div class="certificate">
+                <label for="student-name">
+                <span>Student Name: </span><input id="student-name" type="text">
+                </label>
+
+                <button id="getCertificateBtn">Get Certificate</button>
+            </div>
+        </fieldset>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

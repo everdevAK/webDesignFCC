@@ -15,7 +15,13 @@ function getScores(subjects) {
 
     for (const subject of subjects) {
         if (Number(subject.value) === '') {
-            Number(subject.value) = 0;
+            subject.value = 0;
+            subjectScores.push(0);
+        } else if (Number(subject.value) > 100) {
+            subject.value = 100;
+            subjectScores.push(100);
+        } else if (Number(subject.value) < 0) {
+            subject.value = 0;
             subjectScores.push(0);
         } else {
             subjectScores.push(Number(subject.value));

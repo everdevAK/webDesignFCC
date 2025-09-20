@@ -33,3 +33,11 @@ ____________________________________
 str.charAt(0).toUpperCase() + str.slice(1);
 ```
 - `str.slice(1)` Returns the rest of the string, starting from index 1 (i.e., skipping the first character).
+
+
+
+# max & min property for <input type="number">
+______________________________________________________
+- Setting max="100" in your HTML only affects the up/down arrows in the number input and provides a hint to browsers.
+
+- But it doesn’t strictly prevent users from typing in values beyond that. To enforce the limit, you’ll need a bit of JavaScript validation.

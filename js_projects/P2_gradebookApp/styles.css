@@ -68,14 +68,17 @@ fieldset {
 
 legend {
     padding: 10px;
-    font-size: 2rem;
+    font-size: 1.4rem;
     background: #333;
     color: white;
+    text-align: center;
 }
 
 h2 {
+    font-size: 1.4rem;
     padding: 10px;
     font-weight: normal;
+    text-align: center;
 }
 
 label span {
@@ -86,6 +89,7 @@ label span {
 }
 
 label input {
+    min-width: 200px;
     padding: 10px 15px;
     margin-left: 10px;
 }
@@ -111,10 +115,31 @@ button {
     font-size: 1.1rem;
 }
 
+@media only screen and (max-width: 600px) {
+    label span {
+        text-align: left;
+    }
+
+    fieldset {
+        align-items: center;
+    }
+
+    .certificate {
+        width: 100%;
+    }
+}
 
 @media only screen and (max-width: 450px) {
     label span {
         text-align: left;
+    }
+
+    fieldset {
+        align-items: center;
+    }
+
+    label input {
+        min-width: unset;
     }
 
     .certificate input {

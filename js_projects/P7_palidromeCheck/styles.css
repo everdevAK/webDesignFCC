@@ -1,0 +1,109 @@
+:root {
+  --main-bg: #222;
+  --main-txt-color: #fff;
+  --highlight-color: orangered;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--main-bg);
+  color: var(--main-txt-color);
+  font-family: arial, sans-serif;
+}
+
+label,
+#result,
+button,
+header {
+  text-align: center;
+}
+
+h1 {
+  color: var(--highlight-color);
+}
+
+main {
+  width: 100%;
+  max-width: 800px;
+  min-height: 100vh;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+details {
+  width: 100%;
+  max-width: 90%;
+  text-align: center;
+  padding: 20px;
+  border: 4px solid var(--highlight-color);
+  border-radius: 50px;
+}
+
+details summary {
+  color: var(--highlight-color);
+}
+
+details p {
+  padding-block-start: 15px;
+}
+
+label {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+input,
+button {
+  padding: 8px 15px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+} 
+
+input {
+  width: 100%;
+  max-width: 90%;
+  font-size: 1.05rem;
+}
+
+button {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: var(--highlight-color);
+}
+
+.result {
+  padding: 10px 20px;
+  margin-top: 20px;
+  font: bold 1.1rem sans-serif;
+  background: black;
+  border: 2px solid grey;
+  border-radius: 15px;
+  width: 100%;
+  min-height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
